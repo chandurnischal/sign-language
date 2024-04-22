@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language Translator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <style>
+    /* Add your custom styles here */
+    /* Set a background image */
+    body {
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .jumbotron {
+      background-color: rgba(0,0,0,0.5);
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Sign Language Translator</h1>
+      <p class="lead">Translate text into sign language or identify sign language characters from an image.</p>
+      <a href="/recognition" class="btn btn-primary">Recognition</a>
+      <a href="/fingerspell" class="btn btn-primary">Translation</a>
+    </div>
+  </div>
+
+</body>
+</html>

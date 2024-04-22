@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Uploaded</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .uploaded-image {
+            max-width: 25%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">You Uploaded</h1>
+        <img class="uploaded-image mt-3" src="/uploads/{{ filename }}" alt="Uploaded Image">
+        <div class="mt-3">
+            <h2>Class: <span class="text-primary">{{ class_name }}</span></h2>
+            <h3>Probability: <span class="text-success">{{ probability }}%</span></h3>
+            <h4>Language Selected: <span class="text-info">{{ language }}</span></h4>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
