@@ -48,4 +48,4 @@ Built using *Flask* and *ngrok*.
 
 ![Form](static/images/fingerSpellOption.png)
 
-![Output](static/images/fingersSpellExample.png.jpg)
+![Output](static/images/fingerSpellExample.png.jpg)
