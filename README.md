@@ -36,16 +36,21 @@ Source: [https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl
 
 Built using *Flask* and *ngrok*. 
 
+**Landing Page**
 ![Landing Page](static/images/landingPage.jpg)
 
 ### Recognition Functionality
 
+**Form**
 ![Form](static/images/gestureRecognitionOption.jpg)
 
+**Output**
 ![Output](static/images/gestureRecognitionExample.png)
 
 ### Translation Functionality
 
+**Form**
 ![Form](static/images/fingerSpellOption.png)
 
+**Output**
 ![Output](static/images/fingerSpellExample.png.jpg)
