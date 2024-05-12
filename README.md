@@ -1,19 +1,20 @@
-# Sign Language Gesture Recognition Web Application
+# Sign Language Recognition Web Application
 
-This project aims to develop a web application for recognizing American Sign Language (ASL) and Indian Sign Language (ISL) gestures using Convolutional Neural Network (CNN) models. We explored several CNN model performances for both languages and built a web application to help users utilize these trained models effectively.
+This repository hosts a comprehensive project aimed at developing a web application for recognizing American Sign Language (ASL) and Indian Sign Language (ISL) gestures using Convolutional Neural Network (CNN) models. We've explored various CNN models' performances for both languages and built a user-friendly web interface to facilitate efficient utilization of these trained models.
 
 ## Features
 
-- **Model Exploration**: We evaluated the performance of multiple CNN models for both ASL and ISL gesture recognition. Through extensive experimentation, we identified models that achieved high accuracy and robustness across various gestures and conditions.
+- **Model Exploration**: We've rigorously evaluated the performance of multiple CNN models for ASL and ISL gesture recognition. Through extensive experimentation, we've identified models that exhibit high accuracy and robustness across diverse gestures and conditions.
 
-- **Performance Metrics**: The web application provides insights into the performance of each CNN model, including accuracy rates, inference speed, and error analysis. This information helps users understand the strengths and limitations of the deployed models.
+- **Performance Metrics**: Our models were meticulously trained, and performance metrics such as accuracy and loss were recorded and analyzed to select the best-performing models for our dataset.
 
-- **Web Application**: We developed a user-friendly web application that provides seamless access to the trained CNN models. Users can upload images containing ASL or ISL gestures and receive instant recognition results.
+- **Web Application**: We've developed an intuitive web application that provides seamless access to the trained CNN models. Users can effortlessly upload images containing ASL or ISL gestures and receive instant recognition results.
 
-- **Accessibility**: Our goal is to make sign language recognition accessible to a wide range of users. The web application features intuitive navigation and clear instructions, ensuring a positive user experience for individuals with varying levels of technical expertise.
+- **Accessibility**: Our primary aim is to make sign language recognition accessible to a wide audience. The web application boasts intuitive navigation and clear instructions, ensuring a positive user experience for individuals with varying levels of technical expertise.
+
 ## Models
 
-The following CNN models are included in the project:
+The following CNN models are included in this project:
 
 - Model 1: MobileNetV3
 - Model 2: InceptionV2
@@ -26,36 +27,62 @@ The following CNN models are included in the project:
 
 ### American Sign Language (ASL)
 
-Source: [https://www.kaggle.com/datasets/ayuraj/asl-dataset/data](https://www.kaggle.com/datasets/ayuraj/asl-dataset/data)
+Source: [ASL Dataset on Kaggle](https://www.kaggle.com/datasets/ayuraj/asl-dataset/data)
 
 ### Indian Sign Language (ISL)
 
-Source: [https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl](https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl) 
+Source: [ISL Dataset on Kaggle](https://www.kaggle.com/datasets/prathumarikeri/indian-sign-language-isl)
+
+## Usage
+
+It is recommended to utilize Google Colaboratory to run the scripts as all the necessary libraries are pre-installed there. If running the application locally, install the required dependencies using the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Steps to Run:
+
+1. **Download Datasets**: Refer to the links provided in the [*Dataset*](#dataset) section to download the ASL and ISL datasets.
+
+2. **Preprocessing**: 
+   - Trim the ISL dataset to have 70 samples per class and copy images for *class 0* from the ASL dataset as it represents the same gesture in both languages.
+   - Split datasets into training and testing datasets by running the `reduce.ipynb` script.
+
+3. **Split Datasets**: 
+   Run the `splitter.ipynb` script to further divide the datasets into training and testing sets.
+
+4. **Training Models**: 
+   Execute the respective scripts listed in the [Models](#models) section to train different CNN models. Detailed instructions can be found within each script.
+
+5. **Testing Models**: 
+   Run the `tester.ipynb` script and follow the provided instructions to evaluate the trained CNN models.
+
+6. **Launch Web Application**: 
+   Start the web application by running the `app.ipynb` script.
 
 ## Web Application
-
-Built using *Flask* and *ngrok*. 
 
 **Landing Page**
 
 ![Landing Page](static/images/landingPage.jpg)
 
-### Recognition Functionality
+### Gesture Recognition Functionality
 
-**Form**
+**Input Form**
 
-![Form](static/images/gestureRecognitionOption.jpg)
+![Gesture Recognition Form](static/images/gestureRecognitionOption.jpg)
 
-**Output**
+**Recognition Output**
 
-![Output](static/images/gestureRecognitionExample.png)
+![Gesture Recognition Output](static/images/gestureRecognitionExample.png)
 
-### Translation Functionality
+### Finger Spelling Translation Functionality
 
-**Form**
+**Input Form**
 
-![Form](static/images/fingerSpellOption.png)
+![Finger Spelling Form](static/images/fingerSpellOption.png)
 
-**Output**
+**Translation Output**
 
-![Output](static/images/fingerSpellExample.png.jpg)
+![Finger Spelling Output](static/images/fingerSpellExample.jpg)
